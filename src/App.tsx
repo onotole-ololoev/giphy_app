@@ -39,7 +39,8 @@ function App() {
         {gifArr.map(el => {
             return (
                 <div>
-                    <img src={el.url} alt='some gif'/>
+                    <img src={el.source_post_url} alt='some gif'/>
+                    <p>{el.title}</p>
                 </div>
             )
         })}
