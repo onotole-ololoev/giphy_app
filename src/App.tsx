@@ -38,8 +38,8 @@ function App() {
         <div>{count}</div>
         {gifArr.map(el => {
             return (
-                <div>
-                    <img src={el.source_post_url} alt='some gif'/>
+                <div key={el.id}>
+                    <img src={el.url} alt='some gif'/>
                     <p>{el.title}</p>
                 </div>
             )

@@ -421,7 +421,7 @@ type ActionType = GetGifACType
 export const giphyReducer = (state: InitialStateType = initialState, action: ActionType) => {
     switch (action.type) {
         case "GIF/GET-GIPHY":
-            return {...action.gifsData}
+            return {...state, data: action.gifsData.data}
         default:
             return state
     }

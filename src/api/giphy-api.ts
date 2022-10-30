@@ -16,6 +16,5 @@ export type getModelType = {
         // lang?: string
         random_id?: string
         bundle?: string
-
     }
 }
